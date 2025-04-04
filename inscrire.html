@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>se connecter </title> 
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1>powertech</h1>
+			<p id="slogan">the next gen</p>
+			<div id="account">
+				<a href="connect .html" target="_blank">se connecter</a>
+				<a href="inscrire.html" target="_blank">s'inscrire</a>
+			</div>
+			<nav>
+					<a href="accessoires.html" target="_blank">accessoires</a>
+					<a href="services.html" target="_blank">services</a>
+			</nav>
+		</header>
+		<form method="post" action="page.php">
+			<h1>     s'inscrire     </h1>
+			<label for="nom">nom </label>
+			<input id="nom" type="text" name="nom">
+			<br>
+			<label for="prenom">prenom </label>
+			<input id="prenom" type="text"name="prenom">
+			<br>
+			<label for="adresse">adresse</label>
+			<input id="adresse" type="text"name="adresse">
+			<br>
+			<label for="sexe">feminin</label>
+			<input id="feminin"type="radio"name="sexe" value="F">
+			<label for="sexe">masculin</label>
+			<input id="masculin" type="radio"name="sexe" value="M">
+			<br>
+			<label for="telephone">iphone</label>   
+			<input id="telephone" type="checkbox" name="telephone" value="iphone"><br>
+			<label for="telephone">tecno</label>
+			<input id="telephone" type="checkbox" name="telephone" value="tecno"><br>
+			<label for="telephone">samsung</label>
+			<input id="telephone" type="checkbox" name="telephone" value="samsung"><br>
+			<label for="telephone">google pixel</label>
+			<input id="telephone"type="checkbox" name="telephone"value="google pixel"><br>
+			<label for="telephone">phantom</label>
+			<input id="telephone" type="checkbox" name="telephone" value="phantom"><br>
+			<label for="telephone">nokia</label>
+			<input id="telephone"type="checkbox" name="telephone" value="nokia"><br>
+			<label for="telephone">itel</label>
+			<input id="telephone"type="checkbox" name="telephone" value="itel"><br>
+			<br>
+			<label for="pays">pays</label>
+			<select>
+				<option name="cameroun" value="cmr">cameroun </option>
+				<option name="cote d'ivoire">cote d'ivoire </option>
+				<option name="congo">congo </option>
+				<option name="angola">angola</option>
+				<option name="senegal">senegal</option>
+				<option name="maroc">maroc </option>
+				<option name="tunisie">tunisie </option>
+				<option name="mali"> mali</option>
+				<option name="rwanda">rwanda</option>
+				<option name="egypte">egypte</option>
+			</select>
+			<br>
+			<label for="comment">pays</label>
+			<textarea id="comment" name="comment" maxlength="100"></textarea><br>
+			<input type="submit" value="envoyer">
+			<input type="reset" value="recommencer">
+		</form>
+	</body>
+</html>

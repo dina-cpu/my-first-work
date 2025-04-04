@@ -1,0 +1,669 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #01e;
+    color: azure;
+    animation: appear_header 3s ease-in-out;
+}
+@keyframes appear_header{
+    0%{
+        background-color: #fff;
+        opacity: 0;
+    }
+    100%{
+        background-color: #01e;
+        opacity: 1;
+    }
+}
+header h1{
+    font-size: 2em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#slogan{
+    text-transform: capitalize;
+    font-size: 0.75em;
+    display: inline;
+}
+#account{
+    float: right;
+    margin-top: 30px;
+}
+#account a{
+    color: azure;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 0 20px;
+}
+#account a:hover{
+    background-color: white;
+    color: #01e;
+}
+#account a:active{
+    background-color: navy;
+    color: white;
+    border: none;
+}
+nav{
+    background-color: white;
+    text-align: center;
+    border-bottom: 0.25px solid rgba(0, 0, 0, 0.1);
+    font-weight: lighter; 
+    font-size: 1em;
+    height: 20px;
+}
+nav a{
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0 15px;
+    clear: right;
+}
+nav a:hover{
+    border-bottom: 2.5px solid #01e;
+    background-color: rgba(240, 240, 240, 0.5);
+}
+nav a:active{
+    background-color: white;
+    border-bottom: 2.5px solid #e22;
+}
+nav ul, nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    color: black;
+}
+nav ul li{
+    margin: 0 15px;
+    width: 9%;
+    height: 20px;
+    overflow: hidden;
+}
+footer{
+    background-color: ghostwhite;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    clear: both;
+    margin-top: 100px;
+}
+#bottom-search, #top-search{
+    text-transform: capitalize;
+    border: 0.25 solid rgba(0, 0, 0, 0.1);
+}
+#bottom-search{
+    border-radius: 25px;
+    position: absolute;
+    left: 30%;
+    padding: 5px;
+    width: 18%;
+}
+#link{
+    position: absolute;
+    left: 48%;
+}
+#link img{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    border-radius: 25px;
+}
+#link img:hover{
+    position: relative;
+    bottom: 6px;
+}
+#search-items{
+    width: 100%;
+    height: 430px;
+    background-image: url("image/arr4.jpg");
+}
+#top-search{
+    display: block;
+    border-radius: 30px;
+    background-color: white;
+    width: 25%;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    font-size: 1.05em;
+    text-transform: capitalize;
+    animation: appear_top_search 3s ease-in-out;
+}
+@keyframes appear_top_search{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#top-search:focus, #bottom-search{
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.items{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    height: 90%;
+    width: 70%;
+    padding: 20px;
+    overflow: hidden;
+    animation: appear_items 3s ease-in-out;
+}
+@keyframes appear_items{
+        0%{
+            margin-left: -200px;
+            opacity: 0;
+            letter-spacing: -20px;
+            border-radius: 25px;
+        }
+        100%{
+            margin-left: normal;
+            opacity: 1;
+            letter-spacing: normal;
+            border-radius: normal;
+        }
+    }
+.items figcaption{
+    background-color: white;
+    text-align: justify;
+}
+.items h1{
+    color: black;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+.items marquee{
+    color: gold;
+    font-size: 1em;
+    padding: auto;
+}
+.items .price{
+    font-size: 0.75;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.items img{
+    width: 100%;
+    height: auto;
+}
+.items a{
+    background-color: #01e;
+    color: azure;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 0 15px;
+    display: inline-block;
+}
+.items a:hover{
+    background-color: #0b0;
+}
+.items a:active{
+    background-color: red;
+}
+.items .caract{
+    color: blue;
+}
+.items .caract:hover{
+    text-decoration: underline;
+}
+#product{
+    color: black;
+    background-color: #fff;
+    text-align: justify;
+    width: 1320px;
+    height: 700px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    animation: appear_main_items 3s ease-in-out;
+}
+@keyframes appear_main_items{
+    0%{
+        opacity: 0;
+        letter-spacing: -20px;
+        border-radius: 25px;
+    }
+    100%{
+        opacity: 1;
+        letter-spacing: normal;
+        border-radius: normal;
+    }
+}
+#product figcaption{
+    float: right;
+    width: 45%;
+    height: 100%;
+    overflow: auto;
+}
+#product h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 130%;
+}
+#product-price{
+    border: 0.25px solid rgba(0, 0, 0, 0.1);
+    background-color: hsla(230deg, 50%, 97.5%, 0.7);
+    border-radius: 12px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3em;
+    width: 60%;
+}
+#product a{
+    background-color: #01e;
+    color: azure;
+    font-size: 1.25em;
+    padding: 15px 25px;
+    display: block;
+    border-radius: 30px;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+}
+#product a:hover{
+    background-color: #0b0;
+}
+#product a:active{
+    background-color: red;
+}
+#product #statut{ /*a supprimer si inutile plus tard*/
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 650;
+}
+#product img{
+    float: left;
+    width: 45%;
+    height: 90%;
+    margin: 50px;
+}
+#product ul{
+    margin: 50px 0;
+    list-style-type: lower-greek;
+    text-transform: capitalize;
+    font-size: 1.15em;
+    line-height: 2em;
+}
+#others{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.other{
+    border-radius: 30px;
+    background-color: snow;
+    box-shadow:  5px 2px 2px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    height: 90%;
+    width: 80%;
+    margin: 10px 120px;
+    animation: appear_items 3s ease-in-out;
+}
+.other figcaption{
+    font-size: larger;
+}
+.other img{
+    width: 60%;
+    height: 70%;
+}
+.other a{
+    text-decoration: none;
+    color: navy;
+    text-transform: capitalize;
+}
+#more-items{
+    width: 50%;
+    height: 1210px;
+    margin: 100px auto;
+    animation: appear_other_services 3s ease-in-out;
+}
+@keyframes appear_other_services{
+    0%{
+        margin-bottom: -200px;
+        opacity: 0;
+    }
+    100%{
+        margin-bottom: normal;
+        opacity: 1;
+    }
+}
+#more-items img{
+    width: 100%;
+    height: 50%;
+}
+#more-items{
+    text-align: center;
+    font-size: larger;
+    color: #10f;
+}
+.mission{
+    width: 100%;
+    height: 500px;
+    background-image: url("image/arriere-plan.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+.mission h1{
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    top: 150px;
+}
+.mission p{
+    width: 35%;
+    height: 20%;
+    margin: auto;
+    position: relative;
+    top: 140px;
+    font-size: larger;
+}
+.mission mark{
+    background-color: inherit;
+    color: #01e;
+    text-transform: capitalize;
+}
+.detail{
+    margin: 250px auto;
+}
+.detail h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    border-bottom: 1px solid #01e;
+}
+.detail figure{
+    display: inline-block;
+    width: 25%;
+    height: 20%;
+}
+.detail img{
+    width: 100%;
+}
+.detail figcaption{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+.detail mark{
+    background-color: inherit;
+    color: #01e;
+    text-transform: capitalize;
+}
+#part{
+    width: 70%;
+    height: 10%;
+    background-color: ghostwhite;
+    margin: 15% auto;
+    padding: 15px;
+    font-size: 1em;
+    color: blue;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+#part h1{
+    color: #01e;
+    font-size: medium;
+    border-bottom: 1px solid #01e;
+    text-transform: uppercase;
+}
+#part a{
+    color: #01e;
+    font-size: small;
+}
+#part figure, #part figcaption, #part img{
+    display: inline-block;
+}
+#part figure{
+    width: 40%;
+}
+#part img{
+    width: 10%;
+    margin: 5%;
+}
+#part a img:hover{
+    position: relative;
+    bottom: 2px;
+}
+#part a:hover{
+    color: red;
+}
+#part a:active{
+    color: royalblue;
+}
+#intro{
+    text-align: center;
+    background-image: url("image/arr3.jpg");
+    color: azure;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 500px;
+    padding: 10px 0;
+    font-size: larger;
+}
+#intro strong{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+.services{
+    margin: 300px 0;
+}
+.services h1{
+    color: #01e;
+    font-size: 2em;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    height: 40px;
+}
+.services p{
+    color: #111;
+    text-align: center;
+    font-size: medium;
+}
+#img-smartp{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#img-smartp figure{
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+    margin: 0 35px;
+    height: 90%;
+    width: 70%;
+    display: inline-block;
+    overflow: hidden;
+}
+#img-smartp figcaption{
+    text-align: center;
+}
+#img-smartp img{
+    width: 70%;
+    height: 50%;
+}
+#img-smartp figcaption, #img-smartp h1, #img-smartp p{
+    display: inline-block;
+    text-transform: capitalize;
+}
+#img-smartp h1{
+    font-size: larger;
+    padding: 10px;
+    margin: 0;
+    width: auto;
+    background-color: white;
+    color: #01e;
+}
+#img-smartp .price{
+    color: #fff;
+    background-color: #fa0;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+}
+#smartphone figcaption p{
+    text-transform: uppercase;
+    font-size: medium;
+    line-height: 1.5em;
+    text-align: left;
+}
+#smartphone figcaption p:hover{
+    letter-spacing: 0.01em;
+}
+.ex{
+    color: #111;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: auto 15%;
+    width: 70%;
+    height: 1200px;
+}
+.ex h1{
+    font-size: medium;
+    text-align: center;
+    color: #01e;
+    text-align: center;
+}
+.ex img{
+    width: 100%;
+    height: 70%;
+    display: inline-block;
+}
+.ex figcaption{
+    font-size: 1.25em;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    color: navy;
+}
+#partenaires figcaption{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 50px auto;
+}
+#partenaires{
+    margin: 100px 0;
+    text-align: center;
+}
+#partenaires img{
+    width: 12%;
+    height: 15%;
+}
+#question{
+    width: 100%;
+    height: 50%;
+}
+#question .text{
+    float: right;
+    width: 50%;
+    height: 100%;
+    font-size: x-large;
+    text-align: center;
+}
+#question .text a{
+    background-color: #01e;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 20%;
+    text-transform: capitalize;
+}
+#question .text a:hover{
+    background-color: #0b0;
+}
+#question .text a:active{
+    background-color: red;
+}
+#question .img img{
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+form{
+    background-color: #01e;
+    color: white;
+    width: 70%;
+    height: 620px;
+    margin: 50px auto;
+    border-radius: 50px;
+    padding: 20px 30px;
+    line-height: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.05em;
+}
+form h1{
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+form h2, form label{
+    font-size: large;
+}
+form textarea{
+    width: 90%;
+    border-radius: 10px;
+}
+form input{
+    border-radius: 10px;
+    border: none;
+}
+input[type=submit],input[type=reset]{
+	border-radius: 30px;
+	padding: 15px;
+	color: white;
+	font-size: 1.25em;
+}
+input[type=submit]{
+	background-color: #0f4;
+}
+input[type=submit]:hover{
+	background-color: green;
+}
+input[type=reset]{
+	background-color: #f10;
+}
+input[type=reset]:hover{
+	background-color: #000;
+}
+label,input{
+	text-transform: capitalize;
+}
+form h2{
+	text-align: center;
+	font-size: 70px;
+	font-family: Times New Roman, sans-serif;
+}
+form p{
+	line-height: 25px;
+	font-weight: bold;
+}
+textarea{
+	width: 80%;
+	height: 20%;
+	margin: auto;
+}
+video{
+    width: 100%;
+    margin: 50px auto;
+}
